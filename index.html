@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Exo+2&family=Lato&family=Merriweather+Sans:ital,wght@1,600&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@900&family=Oswald:wght@500&family=Palette+Mosaic&family=Satisfy&family=Shadows+Into+Light&family=Solway:wght@300&family=Staatliches&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98fe714365.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c7b15611695225.57a06a4485387.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600;1,700&family=Cairo&family=Fjalla+One&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Cairo&family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <title>Mercys Calculator</title>
+
+
+</head>
+
+<script>
+    function turn_on() {
+        var element = document.getElementById("turn-on-btn");
+        element.classList.toggle("turn-on");
+        var element2 = document.getElementById("turn-on-text");
+        element2.classList.toggle("go-away")
+        var element3 = document.getElementById("output-text");
+        element3.innerText = ' '
+        element3.classList.toggle("visible")
+
+    }
+</script>
+
+
+<body>
+    <div class="tittle">
+        <p>Mercy's Calculator </p>
+    </div>
+
+    <div class="calculator">
+        <div class="cal-border">
+            <div class="cal-heading">
+                <p>Mercy's Calculator <i class="fa-solid fa-calculator"></i></p>
+            </div>
+
+            <div class="output-box" id="turn-on-btn">
+                <p class="btn" id="turn-on-text" onclick="turn_on()">Calculator is OFF. Click Here </p>
+
+                <div class="" id="output-text"><input type="input" name="" value id="" placeholder=""></div>
+            </div>
+            <div class="buttons-first">
+                <button type="button" class="btn-grad " id="calcbtn">C</button>
+                <button type="button" class="btn-grad" id="calcbtn">=</button>
+                <button type="button" class="btn-grad" id="calcbtn">←</button>
+                <button type="button" class="btn-grad off-btn" onclick="turn_on()"><i class="fa-solid fa-power-off"></i></button>
+
+            </div>
+            <div class="buttons-first">
+                <button type="button" class="btn-grad">7</button>
+                <button type="button" class="btn-grad">8</button>
+                <button type="button" class="btn-grad">9</button>
+                <button type="button" class="btn-grad" id="calcbtn">*</button>
+
+            </div>
+            <div class="buttons-first">
+                <button type="button" class="btn-grad">4</button>
+                <button type="button" class="btn-grad">5</button>
+                <button type="button" class="btn-grad">6</button>
+                <button type="button" class="btn-grad" id="calcbtn">-</button>
+
+            </div>
+            <div class="buttons-first">
+                <button type="button" class="btn-grad">1</button>
+                <button type="button" class="btn-grad">2</button>
+                <button type="button" class="btn-grad">3</i></button>
+                <button type="button" class="btn-grad" id="calcbtn">+</button>
+
+            </div>
+            <div class="buttons-first">
+                <button type="button" class="btn-grad">.</button>
+                <button type="button" class="btn-grad">0</button>
+                <button type="button" class="btn-grad">%</button>
+                <button type="button" class="btn-grad" id="calcbtn">/</button>
+
+            </div>
+            <div class="last-border"></div>
+        </div>
+
+        <script>
+            let display = document.getElementById('output-text');
+
+            let buttons = Array.from(document.getElementsByClassName('btn-grad'));
+
+            buttons.map(btn_grad => {
+                btn_grad.addEventListener('click', (e) => {
+                    switch (e.target.innerText) {
+                        case 'C':
+                            display.innerText = '0';
+                            break;
+                        case '←':
+                            if (display.innerText) {
+                                display.innerText = display.innerText.slice(0, -1);
+
+                            }
+                            break;
+                        case '=':
+                            display.innerText = eval(display.innerText);
+                            break;
+                        default:
+                            display.innerText += e.target.innerText;
+                    }
+                });
+            });
+        </script>
+
+    </div>
+    <a href="" class="tnc login-with-flex">Privacy Policy & Terms and Conditions</a>
+</body>
+
+</html>
