@@ -175,7 +175,7 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .cal-border {
         border: 5px solid black;
         border-radius: 5%;
@@ -224,6 +224,186 @@ body {
         margin-left: 0.5%;
         margin-right: 0.5%;
         padding: 15px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .cal-border {
+        border: 5px solid black;
+        border-radius: 5%;
+        margin: 1%;
+        min-height: 350px;
+        min-width: 250px;
+    }
+    .tittle {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 7vh;
+        font-size: 3vh;
+        transition: opacity 1s;
+        transition: color 1s;
+    }
+    .btn-grad {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 38px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+    .buttons-first {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .off-btn {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 370px) {
+    .cal-border {
+        border: 5px solid black;
+        border-radius: 5%;
+        margin: 1%;
+        min-height: 350px;
+        min-width: 250px;
+    }
+    .tittle {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 7vh;
+        font-size: 3vh;
+        transition: opacity 1s;
+        transition: color 1s;
+    }
+    .btn-grad {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+    .buttons-first {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .off-btn {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 310px) {
+    .cal-border {
+        border: 5px solid black;
+        border-radius: 5%;
+        margin: 1%;
+        min-height: 350px;
+        min-width: 250px;
+    }
+    .tittle {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 7vh;
+        font-size: 3vh;
+        transition: opacity 1s;
+        transition: color 1s;
+    }
+    .btn-grad {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 5px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+    .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+    .buttons-first {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .off-btn {
+        background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+        margin-top: 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding: 15px 20px;
         text-align: center;
         text-transform: uppercase;
         transition: 0.5s;
